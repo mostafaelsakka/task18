@@ -1,0 +1,115 @@
+#1
+
+#normal
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+Name=[]
+for n in Names:
+    Name.append(n.upper())
+print(Name)
+
+# list comprehension 
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= [n.upper() for n in Names]
+print(name)
+
+# functional programming
+
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= map(lambda n : n.upper(), Names)
+print(list(name))
+###############################
+#2
+#normal
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+Name=[]
+for n in Names:
+    if "a" in n:
+        Name.append(n)
+print(Name)
+
+# list comprehension
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= [n for n in Names if "a" in n]
+print(name)
+
+# functional programming
+
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= filter(lambda n :"a" in n  , Names)
+print(list(name))
+###############################
+
+#3
+#normal
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+Name=[]
+for n in Names:
+    if n.startswith('t'):
+        Name.append(n)
+print(Name)
+
+
+# list comprehension
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= [n for n in Names if n.startswith('t')]
+print(name)
+
+# functional programming
+
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= filter(lambda n :n.startswith('t'), Names)
+print(list(name))
+###############################
+
+
+#2
+#normal
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+Name=[]
+for n in Names:
+    if  n.count('a') >= 2:
+        Name.append(n)
+print(Name)
+
+
+
+
+
+
+# list comprehension
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= [n for n in Names if n.count('a') >= 2]
+print(name)
+
+
+
+# functional programming
+
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+name= filter(lambda n :n.count('a') >= 2, Names)
+print(list(name))
+###############################
+
+
+
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+a , *b = Names
+print('a =' , a)
+print('b = ' ,b)
+
+#####
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+a , *_ ,b =Names
+print('a =' , a)
+print('b = ' ,b)
+
+#####
+Names=['mahmoud','farida','ali','hassan','mohamed','khaled','taha']
+a , b , *_ =Names
+print('a =' , a)
+print('b = ' ,b)
+
+
+
+
+
